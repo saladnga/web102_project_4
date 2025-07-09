@@ -23,7 +23,7 @@ function App() {
       const res = await fetch(API, {
         headers: {
           "x-api-key":
-            "live_5s9GiIQPBFLUVlJwTwTOS4ihVnCn90KvTFiGKYEsoOxIaKLMU1BWEJjjk9XDeXBl",
+            process.env.REACT_APP_CAT_API_KEY,
         },
       });
 
